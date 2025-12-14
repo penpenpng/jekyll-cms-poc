@@ -1,0 +1,12 @@
+- address: wss://relay.nostr.wirednet.jp
+  description: World wide relay
+  description_ja: ワールドワイドリレー
+  authors:
+    - name: imksoo
+      url: https://github.com/imksoo
+- address: wss://relay-jp.nostr.wirednet.jp
+  description: Japanese oriented relay
+  description_ja: 日本向けリレー
+  authors:
+    - name: imksoo
+      url: https://github.com/imksoo
