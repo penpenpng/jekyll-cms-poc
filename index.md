@@ -9,14 +9,3 @@
     {% endfor %}
   </li>
 {% endfor %}
-</ul>
-
-# Relays from toml
-
-<ul>
-{% for _, relay in site.awesomes.Relays %}
-  <li>
-    <code>{{ relay.address }}</code> - {{ relay.description_ja }} by
-  </li>
-{% endfor %}
-</ul>
