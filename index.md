@@ -1,6 +1,3 @@
-Hello Jekyll
-
-
 # Relays
 
 <ul>
@@ -14,10 +11,12 @@ Hello Jekyll
 {% endfor %}
 </ul>
 
-# Relays by markdown
+# Relays from toml
 
-{% for relay in site.data.relays %}
-- `{{ relay.address }}` - {{ relay.description_ja }} by {% for author in relay.authors %}
-      [{{ author.name }}]({{ author.url }}){% unless forloop.last %}, {% endunless %}
-   {% endfor %}
+<ul>
+{% for _, relay in site.awesomes.Relays %}
+  <li>
+    <code>{{ relay.address }}</code> - {{ relay.description_ja }} by
+  </li>
 {% endfor %}
+</ul>
