@@ -1,7 +1,7 @@
 <ul>
 {% for relay in site.data.relays %}
   <li>
-    <code>{{ relay.address }}</code> - {{ relay.description_ja }} by
+    <code>{{ relay.address }}</code> - {{ relay.description.ja }} by
     {% for author in relay.authors %}
       <a href="{{ author.url }}">{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
