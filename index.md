@@ -1,5 +1,3 @@
-# Relays
-
 <ul>
 {% for relay in site.data.relays %}
   <li>
