@@ -13,3 +13,11 @@ Hello Jekyll
   </li>
 {% endfor %}
 </ul>
+
+# Relays by markdown
+
+{% for relay in site.data.relays %}
+- `{{ relay.address }}` - {{ relay.description_ja }} by {% for author in relay.authors %}
+      [{{ author.name }}]({{ author.url }}){% unless forloop.last %}, {% endunless %}
+   {% endfor %}
+{% endfor %}
